@@ -73,11 +73,17 @@ const GeneticVizPlatform = () => {
     }
   };
 
-    // Load demo file
+  // Load demo file
   const loadDemoFile = async () => {
+    console.log('Demo button clicked!');
     try {
-      const response = await fetch('/sample_FASTA.txt');
+      console.log('Fetching file...');
+      const response = await fetch(`${process.env.PUBLIC_URL}/sample_FASTA.txt`);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch demo file: ${response.status}`);
+      }
       const text = await response.text();
+      console.log('Text loaded:', text.substring(0, 200));
       const parsed = parseFASTA(text);
       setSequences(parsed);
       if (parsed.length > 0) {
