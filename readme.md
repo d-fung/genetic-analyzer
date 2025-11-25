@@ -1,6 +1,5 @@
 # [Genetic Sequence Analyzer](https://d-fung.github.io/genetic-analyzer) 🧬
 
-## 🌐 Live Demo
 ### Try it here: https://d-fung.github.io/genetic-analyzer
 
 A powerful web-based bioinformatics tool for analyzing DNA sequences from FASTA files. Built with React to provide real-time sequence analysis, visualization, and protein translation capabilities—all running entirely in your browser.
