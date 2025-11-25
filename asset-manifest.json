@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/genetic-analyzer/static/css/main.56556605.css",
+    "main.js": "/genetic-analyzer/static/js/main.f934890f.js",
+    "index.html": "/genetic-analyzer/index.html",
+    "main.56556605.css.map": "/genetic-analyzer/static/css/main.56556605.css.map",
+    "main.f934890f.js.map": "/genetic-analyzer/static/js/main.f934890f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56556605.css",
+    "static/js/main.f934890f.js"
+  ]
+}
