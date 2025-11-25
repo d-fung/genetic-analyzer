@@ -73,6 +73,23 @@ const GeneticVizPlatform = () => {
     }
   };
 
+    // Load demo file
+  const loadDemoFile = async () => {
+    try {
+      const response = await fetch('/sample_FASTA.txt');
+      const text = await response.text();
+      const parsed = parseFASTA(text);
+      setSequences(parsed);
+      if (parsed.length > 0) {
+        setSelectedSeq(parsed[0]);
+        setAnalysis(analyzeSequence(parsed[0]));
+      }
+    } catch (error) {
+      console.error('Error loading demo file:', error);
+      alert('Could not load demo file. Please make sure sample_FASTA.txt is in the public folder.');
+    }
+  };
+
   // Search motifs
   const handleMotifSearch = () => {
     if (selectedSeq && motifSearch) {
@@ -99,7 +116,6 @@ const GeneticVizPlatform = () => {
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
 
   return (
-    
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -112,13 +128,22 @@ const GeneticVizPlatform = () => {
                 <p className="text-gray-600">Upload FASTA files for comprehensive sequence analysis</p>
               </div>
             </div>
-            <button
-              onClick={() => fileInputRef.current.click()}
-              className="flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
-            >
-              <Upload className="w-5 h-5" />
-              Upload FASTA
-            </button>
+            <div className="flex gap-3">
+              <button
+                onClick={() => fileInputRef.current.click()}
+                className="flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+              >
+                <Upload className="w-5 h-5" />
+                Upload FASTA
+              </button>
+              <button
+                onClick={loadDemoFile}
+                className="flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition"
+              >
+                <Dna className="w-5 h-5" />
+                Use Demo
+              </button>
+            </div>
             <input
               ref={fileInputRef}
               type="file"
