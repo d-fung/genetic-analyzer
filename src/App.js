@@ -33,6 +33,7 @@ const GeneticVizPlatform = () => {
     );
 
     // Codon usage
+    // Skips codons in one reading frame onl, and skips overlapping codons at positions 1 or 2
     const codonUsage = {};
     for (let i = 0; i < sequence.length - 2; i += 3) {
       const codon = sequence.substring(i, i + 3);
@@ -309,7 +310,12 @@ const GeneticVizPlatform = () => {
                 <h2 className="text-xl font-bold text-gray-800 mb-4">Top 10 Codon Usage</h2>
                 <BarChart width={400} height={300} data={analysis.topCodons}>
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
+                  <XAxis 
+                    dataKey="name"
+                    interval={0}
+                    angle={-45}
+                    textAchor="end"
+                   />
                   <YAxis />
                   <Tooltip />
                   <Bar dataKey="value" fill="#8884d8" />
