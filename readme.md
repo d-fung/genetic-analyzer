@@ -4,7 +4,7 @@
 
 A powerful web-based bioinformatics tool for analyzing DNA sequences from FASTA files. Built with React to provide real-time sequence analysis, visualization, and protein translation capabilities—all running entirely in your browser.
 
-![Genetic Sequence Analyzer](https://img.shields.io/badge/React-19.2.0-blue) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3.0-38bdf8) ![License](https://img.shields.io/badge/license-MIT-green)
+![React](https://img.shields.io/badge/React-19.2.0-blue) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3.0-38bdf8) ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## ✨ Features
 
