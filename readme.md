@@ -1,12 +1,12 @@
-# [Genetic Sequence Analyzer](https://d-fung.github.io/genetic-analyzer) 🧬
+# [Genetic Sequence Analyzer](https://d-fung.github.io/genetic-analyzer)
 
 ### Try it here: https://d-fung.github.io/genetic-analyzer
 
-A web-based bioinformatics tool for analyzing DNA sequences from FASTA files. Built with React to provide real-time sequence analysis, visualization, and protein translation capabilities—all running entirely in your browser.
+A web-based bioinformatics tool for analyzing DNA sequences from FASTA files. Built with React to provide real-time sequence analysis, visualization, and protein translation capabilities.
 
 ![React](https://img.shields.io/badge/React-19.2.0-blue) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3.0-38bdf8) ![License](https://img.shields.io/badge/license-MIT-green)
 
-## ✨ Features
+## Features
 
 ### Core Analysis
 - **FASTA File Parser** - Upload and parse single or multiple DNA sequences
@@ -17,7 +17,7 @@ A web-based bioinformatics tool for analyzing DNA sequences from FASTA files. Bu
 ### Advanced Tools
 - **Interactive Sequence Viewer** - Color-coded nucleotide display with position tracking
   - Adenine (A) in blue
-  - Thymine (T) in red  
+  - Thymine (T) in red
   - Guanine (G) in yellow
   - Cytosine (C) in green
 - **Motif Search & Highlighting** - Find DNA patterns using regex with position highlighting
@@ -25,7 +25,7 @@ A web-based bioinformatics tool for analyzing DNA sequences from FASTA files. Bu
 - **Reverse Complement Calculator** - Automatic reverse strand computation
 - **JSON Export** - Download complete analysis results
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 14+ and npm installed
@@ -48,9 +48,9 @@ npm install
 npm start
 ```
 
-Opens at `http://localhost:3000` 🎉
+Opens at `http://localhost:3000`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 genetic-analyzer/
@@ -67,7 +67,7 @@ genetic-analyzer/
 └── package.json               # Dependencies
 ```
 
-## 🧬 Usage Guide
+## Usage Guide
 
 ### Upload & Analyze
 1. Click **"Upload FASTA"** button
@@ -87,21 +87,11 @@ genetic-analyzer/
 - Click **"Export Analysis (JSON)"** to download
 - Includes all statistics, translations, and motif matches
 
-## 🧪 Sample Data
+## Sample Data
 
 Try the sample_FASTA.txt file included in this repo by clicking the ***Use Demo*** Button
 
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| React 19.2.0 | UI framework |
-| Recharts 3.4.1 | Data visualization |
-| Lucide React 0.554.0 | Icon library |
-| Tailwind CSS 3.3.0 | Styling |
-| JavaScript ES6+ | Core logic |
-
-## 🧮 Key Algorithms
+## Key Algorithms
 
 ### GC Content
 ```
