@@ -330,8 +330,8 @@ const GeneticVizPlatform = () => {
                 {analysis.frames.map((frame, idx) => (
                   <div key={idx} className="border border-gray-200 rounded p-3">
                     <div className="font-medium text-gray-700 mb-2">{frame.frame}</div>
-                    <div className="bg-gray-50 p-2 rounded font-mono text-xs overflow-x-auto">
-                      {frame.protein.substring(0, 100)}...
+                    <div className="bg-gray-50 p-2 rounded font-mono text-xs overflow-x-auto whitespace-nowrap">
+                      {frame.protein}
                     </div>
                   </div>
                 ))}
