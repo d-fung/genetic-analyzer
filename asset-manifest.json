@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/genetic-analyzer/static/css/main.56556605.css",
-    "main.js": "/genetic-analyzer/static/js/main.7b03def7.js",
+    "main.css": "/genetic-analyzer/static/css/main.418fb011.css",
+    "main.js": "/genetic-analyzer/static/js/main.28a5fd84.js",
     "index.html": "/genetic-analyzer/index.html",
-    "main.56556605.css.map": "/genetic-analyzer/static/css/main.56556605.css.map",
-    "main.7b03def7.js.map": "/genetic-analyzer/static/js/main.7b03def7.js.map"
+    "main.418fb011.css.map": "/genetic-analyzer/static/css/main.418fb011.css.map",
+    "main.28a5fd84.js.map": "/genetic-analyzer/static/js/main.28a5fd84.js.map"
   },
   "entrypoints": [
-    "static/css/main.56556605.css",
-    "static/js/main.7b03def7.js"
+    "static/css/main.418fb011.css",
+    "static/js/main.28a5fd84.js"
   ]
 }
